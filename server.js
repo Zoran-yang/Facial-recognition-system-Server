@@ -61,5 +61,3 @@ app.put("/image", (req, res) => {handleImage.handleImage(req, res, db)});
 //使用者行為 : 取得辨識圖片資料 || 對應網路行為 : put || 結果 : 更新使用者辨識圖片的次數
 app.post("/imageAPI", (req, res) => {handleImage.getImageAPI(req, res)});
 
-
-
