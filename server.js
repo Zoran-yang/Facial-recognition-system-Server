@@ -13,7 +13,7 @@ const app = express();
 const db = knex({
   client: 'pg',
   connection: {
-    connectionString: "//dzfbmjksdibueh:937c269a2c991c55d7a3ed79ca01667bff4b349f233422b0af4c297db50abbb8@ec2-3-230-122-20.compute-1.amazonaws.com:5432/d23e3k13npt2q1",
+    connectionString: process.env.DATABASE_URL,
     ssl: {
       rejectUnauthorized: false
     }
