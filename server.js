@@ -63,6 +63,3 @@ app.post("/imageAPI", (req, res) => {handleImage.getImageAPI(req, res)});
 
 
 
-
-
-
