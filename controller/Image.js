@@ -54,6 +54,7 @@ const handleImage = (req, res, db) => {
 
     db("userinfo").where('id', '=', id).increment("entries",1).returning("*").then((data) => {
         if(data.length){
+            console.log(data[0])
             res.json(data[0])
         }
         else{
